@@ -1,0 +1,124 @@
+.inf {
+  position: relative;
+  height: 50px;
+  opacity: 0.8;
+  background: linear-gradient(to right, rgb(167, 133, 236) 8%,rgb(240, 126, 236) 50%, rgb(238, 171, 238) 90%);
+  flex: 0 0 auto;
+ 
+  .container {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%); 
+    height: 20px;
+    color: white;
+    font: italic 500 15px Arial;
+
+    .location {
+      padding-top: 1px;  
+      padding-left: 23px;
+      float: left;
+      background-image: url(../../images/home.png);
+      background-repeat: no-repeat;
+      background-position: 0 -1;
+      background-size: 16.5px 16.5px;
+      margin-right: 30px;
+    }
+
+    .phone {
+      float: left;
+      padding-top: 2px;  
+      padding-left: 23px;
+      background-image: url(../../images/phone.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 19px 19px;
+    }
+  }
+
+  .socialNetworks {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%); 
+    height: 30px;
+    width: 120px;
+
+    @mixin icon {
+      width: 33px;
+      height: 33px;
+      float: right;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 30px 30px;
+    }
+    
+    .vk {
+      @include icon;
+      margin-right: 13px;
+      background-image: url(../../images/vk.png);
+    }
+    
+    .inst {
+      @include icon;
+      background-image: url(../../images/inst.png);
+    }
+  }
+}
+
+.menuBlock{
+  height: 110px;
+  position: relative;
+  flex: 0 0 auto;
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -41px;
+    left: 4%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    .logoWoman {
+      height: 95px;
+      width: 40px;
+      background-image: url(../../images/pole_dance.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      margin-right: 8px;
+    }
+
+    .logoImage {
+      height: 100px;
+      width: 300px;
+      background-image: url(../../images/logo.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
+  }
+  
+  .menu {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: sans-serif;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 20px;
+
+    .menu__item {
+      display: inline-block;
+      color: rgb(126, 111, 111);
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    .menu__item:hover {
+      color: rgb(182, 103, 103);
+    }
+  }
+}
