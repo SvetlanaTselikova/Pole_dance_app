@@ -70,6 +70,7 @@
   height: 110px;
   position: relative;
   flex: 0 0 auto;
+  padding-bottom: 7px;
 
   .logo {
     position: absolute;
@@ -88,6 +89,7 @@
       background-position: 0 0;
       background-size: cover;
       margin-right: 8px;
+      margin-top: -5px;
     }
 
     .logoImage {
