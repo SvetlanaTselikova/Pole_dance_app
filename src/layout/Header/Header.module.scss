@@ -4,20 +4,17 @@
   opacity: 0.8;
   background: linear-gradient(to right, rgb(167, 133, 236) 8%,rgb(240, 126, 236) 50%, rgb(238, 171, 238) 90%);
   flex: 0 0 auto;
+  display: flex;
  
   .container {
-    position: absolute;
-    left: 2%;
-    top: 50%;
-    transform: translateY(-50%); 
-    height: 20px;
     color: white;
     font: italic 500 15px Arial;
+    display: flex;
+    margin: auto 60px auto 20px;
 
     .location {
       padding-top: 1px;  
       padding-left: 23px;
-      float: left;
       background-image: url(../../images/home.png);
       background-repeat: no-repeat;
       background-position: 0 -1;
@@ -26,7 +23,6 @@
     }
 
     .phone {
-      float: left;
       padding-top: 2px;  
       padding-left: 23px;
       background-image: url(../../images/phone.png);
@@ -37,10 +33,7 @@
   }
 
   .socialNetworks {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translateY(-50%); 
+    margin: auto 30px auto auto;
     height: 30px;
     width: 120px;
 
@@ -121,6 +114,16 @@
     
     .menu__item:hover {
       color: rgb(182, 103, 103);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inf {
+    height: 85px;
+
+    .container {
+      flex-wrap: wrap;
     }
   }
 }

@@ -15,8 +15,8 @@ class Header extends React.Component {
           </div>
 
           <div className={ styles.socialNetworks }>
-            <a href='https://vk.com/feed'> <div className={ styles.inst }></div> </a>
-            <a href='https://vk.com/feed'><div className={ styles.vk }></div> </a>
+            <a href='https://www.instagram.com/studio_kontrast/'> <div className={ styles.inst }></div> </a>
+            <a href='https://vk.com/pdstudio_kontrast'><div className={ styles.vk }></div> </a>
           </div>
         </div>
         <div className={ styles.menuBlock }>
